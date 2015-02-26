@@ -12,4 +12,8 @@ class Robot
     @name
   end
 
+  def reset
+    @name = ''
+  end
+
 end
