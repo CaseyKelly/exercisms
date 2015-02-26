@@ -1,7 +1,9 @@
+require 'prime'
+
 class Prime
 
   def self.nth(number)
-    2
+    take(number).last
   end
 
 end
