@@ -12,6 +12,8 @@ DnaTranscriber.prototype.toRna = function(dnaStrand) {
       return "U"
     } else if (nucleotide === "T") {
       return "A"
+    } else {
+      throw "Invalid input"
     }
   };
 
