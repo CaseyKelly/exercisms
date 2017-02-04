@@ -1,7 +1,11 @@
 var Hamming = function() {};
 
-Hamming.prototype.compute = function() {
-  return 0
+Hamming.prototype.compute = function(strandOne, strandTwo) {
+  if (strandOne === strandTwo) {
+    return 0
+  } else {
+    return 1
+  }
 };
 
 module.exports = Hamming;
