@@ -1,7 +1,11 @@
 var DnaTranscriber = function() {};
 
 DnaTranscriber.prototype.toRna = function(dnaStrand) {
-  return "G"
+  if (dnaStrand === "C") {
+    return "G"
+  } else {
+    return "C"
+  }
 };
 
 module.exports = DnaTranscriber;
