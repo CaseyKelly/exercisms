@@ -9,6 +9,8 @@ DnaTranscriber.prototype.toRna = function(dnaStrand) {
       return "G"
     } else if (nucleotide === "A") {
       return "U"
+    } else if (nucleotide === "T") {
+      return "A"
     }
   };
 
