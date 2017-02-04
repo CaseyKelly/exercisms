@@ -1,11 +1,16 @@
 var Hamming = function() {};
 
-Hamming.prototype.compute = function(strandOne, strandTwo) {
-  if (strandOne === strandTwo) {
-    return 0
-  } else {
-    return 1
+Hamming.prototype.compute = function(strandA, strandB) {
+  var nucleotidesA = strandA.split("");
+  var nucleotidesB = strandB.split("");
+  var distance = 0;
+
+  for (var i = 0; i < nucleotidesA.length; i++) {
+    if (nucleotidesA[i] !== nucleotidesB[i]) {
+      distance += 1
+    }
   }
+  return distance
 };
 
 module.exports = Hamming;
