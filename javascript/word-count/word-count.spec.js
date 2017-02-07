@@ -28,12 +28,12 @@ describe('count()', function() {
     expect(words.count('car : carpet as java: javascript!!&@$%^&')).toEqual(expectedCounts);
   });
 
-  xit('includes numbers', function() {
+  it('includes numbers', function() {
     var expectedCounts = { testing: 2, 1: 1, 2: 1 };
     expect(words.count('testing 1 2 testing')).toEqual(expectedCounts);
   });
 
-  xit('normalizes to lowercase', function() {
+  it('normalizes to lowercase', function() {
     var expectedCounts = { go: 3 };
     expect(words.count('go Go GO')).toEqual(expectedCounts);
   });
