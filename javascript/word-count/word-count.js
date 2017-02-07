@@ -6,8 +6,11 @@ Words.prototype.count = function(inputString) {
 
     var wordsObject = {};
     for (var i = 0; i < wordArray.length; i++) {
-      var num = wordArray[i].toLowerCase();
-      wordsObject[num] = wordsObject[num] ? wordsObject[num] + 1 : 1;
+      var word = wordArray[i].toLowerCase();
+      var chars = word.length;
+      if (word.charAt(0) === "\'") word = word.substring(1, chars--);
+	    if (word.charAt(--chars) === "\'") word = word.substring(0, chars);
+      wordsObject[word] = wordsObject[word] ? wordsObject[word] + 1 : 1;
     }
     return wordsObject
 };

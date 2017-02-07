@@ -43,7 +43,7 @@ describe('count()', function() {
     expect(words.count('First: don\'t laugh. Then: don\'t cry.')).toEqual(expectedCounts);
   });
 
-  xit('counts words with quotations', function() {
+  it('counts words with quotations', function() {
     var expectedCounts = { 'joe': 1, 'can\'t': 1, 'tell': 1, 'between': 1, 'large': 2, 'and': 1 };
     expect(words.count('Joe can\'t tell between \'large\' and large.')).toEqual(expectedCounts);
   });
