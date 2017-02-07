@@ -1,5 +1,5 @@
 var Isogram = function(word) {
-    this.word = word;
+    this.word = word.toLowerCase();
 };
 
 Isogram.prototype.isIsogram = function() {
