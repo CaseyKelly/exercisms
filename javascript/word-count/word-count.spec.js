@@ -23,7 +23,7 @@ describe('count()', function() {
     expect(words.count('one,two,three')).toEqual(expectedCounts);
   });
 
-  xit('ignores punctuation', function() {
+  it('ignores punctuation', function() {
     var expectedCounts = { car: 1, carpet: 1, as: 1, java: 1, javascript: 1 };
     expect(words.count('car : carpet as java: javascript!!&@$%^&')).toEqual(expectedCounts);
   });
