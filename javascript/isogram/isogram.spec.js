@@ -25,13 +25,13 @@ describe('Isogram Test Suite', function () {
     expect(word.isIsogram()).toEqual(false);
   });
 
-  xit('thumbscrew-japingly', function () {
+  it('thumbscrew-japingly', function () {
     var word = new Isogram('thumbscrew-japingly');
 
     expect(word.isIsogram()).toEqual(true);
   });
 
-  xit('Hjelmqvist-Gryb-Zock-Pfund-Wax', function () {
+  it('Hjelmqvist-Gryb-Zock-Pfund-Wax', function () {
     var word = new Isogram('Hjelmqvist-Gryb-Zock-Pfund-Wax');
 
     expect(word.isIsogram()).toEqual(true);
