@@ -18,7 +18,7 @@ describe('count()', function() {
     expect(words.count('one fish two fish red fish blue fish')).toEqual(expectedCounts);
   });
 
-  xit('handles cramped lists', function() {
+  it('handles cramped lists', function() {
     var expectedCounts = { one: 1, two: 1, three: 1 };
     expect(words.count('one,two,three')).toEqual(expectedCounts);
   });
