@@ -37,19 +37,19 @@ describe('Isogram Test Suite', function () {
     expect(word.isIsogram()).toEqual(true);
   });
 
-  xit('Heizölrückstoßabdämpfung', function () {
+  it('Heizölrückstoßabdämpfung', function () {
     var word = new Isogram('Heizölrückstoßabdämpfung');
 
     expect(word.isIsogram()).toEqual(true);
   });
 
-  xit('the quick brown fox', function () {
+  it('the quick brown fox', function () {
     var word = new Isogram('the quick brown fox');
 
     expect(word.isIsogram()).toEqual(false);
   });
 
-  xit('Emily Jung Schwartzkopf', function () {
+  it('Emily Jung Schwartzkopf', function () {
     var word = new Isogram('Emily Jung Schwartzkopf');
 
     expect(word.isIsogram()).toEqual(true);
