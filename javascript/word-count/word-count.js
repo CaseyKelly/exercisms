@@ -1,7 +1,7 @@
 var Words = function() {};
 
 Words.prototype.count = function(inputString) {
-    var cleanString = inputString.replace(/[|&;$%@"<>()+:!^.]/g, "");
+    var cleanString = inputString.replace(/[|&;$%@"<>()+:!^.?¡¿]/g, "");
     var wordArray = cleanString.split(/[ ,]+/)
 
     var wordsObject = {};

@@ -48,7 +48,7 @@ describe('count()', function() {
     expect(words.count('Joe can\'t tell between \'large\' and large.')).toEqual(expectedCounts);
   });
 
-  xit('counts properly international characters', function() {
+  it('counts properly international characters', function() {
     var expectedCounts = { 'hola': 1, 'qué': 1, 'tal': 1, 'привет': 1 };
     expect(words.count('¡Hola! ¿Qué tal? Привет!')).toEqual(expectedCounts);
   });
