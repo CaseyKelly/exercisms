@@ -1,7 +1,10 @@
-var Isogram = function() {};
+var Isogram = function(word) {
+    this.word = word;
+};
 
 Isogram.prototype.isIsogram = function() {
-    return true
+    var letters = this.word.split("")
+    return letters.length === new Set(letters).size;
 };
 
 module.exports = Isogram;
