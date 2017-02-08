@@ -12,6 +12,7 @@ BeerSong.prototype.verse = function(verseNumber) {
 };
 
 BeerSong.prototype.sing = function(verseStart, verseEnd) {
+  verseEnd ? verseEnd : verseEnd = 0
   var verses = ""
   for (var i = verseStart; i >= verseEnd; i--) {
     verses += this.verse(i) + "\n"
