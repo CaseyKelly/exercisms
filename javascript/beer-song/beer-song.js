@@ -11,8 +11,7 @@ BeerSong.prototype.verse = function(verseNumber) {
   return verseNumber + ' bottles of beer on the wall, ' + verseNumber + ' bottles of beer.\nTake one down and pass it around, ' + (verseNumber - 1) + ' bottles of beer on the wall.\n'
 };
 
-BeerSong.prototype.sing = function(verseStart, verseEnd) {
-  verseEnd ? verseEnd : verseEnd = 0
+BeerSong.prototype.sing = function(verseStart, verseEnd = 0) {
   var verses = ""
   for (var i = verseStart; i >= verseEnd; i--) {
     verses += this.verse(i) + "\n"
