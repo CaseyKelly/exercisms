@@ -42,7 +42,7 @@ describe('Pangram()', function()  {
     expect(pangram.isPangram()).toBe(true);
   });
 
-  xit('pangram with non-ascii characters', function()  {
+  it('pangram with non-ascii characters', function()  {
     var pangram = new Pangram("Victor jagt zwölf Boxkämpfer quer über den großen Sylter Deich.");
     expect(pangram.isPangram()).toBe(true);
   });
