@@ -7,6 +7,10 @@ var Anagram = function(input) {
 Anagram.prototype.matches = function(wordArray) {
     var anagrams = [];
 
+    if (arguments.length > 1) {
+        wordArray = [...arguments];
+    };
+
     function sortString(input) {
         return input.toLowerCase().split("").sort().join()
     };
