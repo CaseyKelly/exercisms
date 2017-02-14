@@ -1,13 +1,18 @@
 var Anagram = function(input) {
     this.input = input
     this.split = input.toLowerCase().split("");
+    this.sorted = this.split.sort().join();
 };
 
 Anagram.prototype.matches = function(wordArray) {
     var anagrams = [];
 
+    function sortString(input) {
+        return input.toLowerCase().split("").sort().join()
+    };
+
     for (var i = 0; i < wordArray.length; i++) {
-        if (wordArray[i].toLowerCase().split("").sort().join() === this.split.sort().join()) {
+        if (sortString(wordArray[i]) === this.sorted && wordArray[i].toLowerCase() !== this.input.toLowerCase()) {
             anagrams.push(wordArray[i])
         }
     }
