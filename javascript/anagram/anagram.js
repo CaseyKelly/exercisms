@@ -6,7 +6,7 @@ var Anagram = function(input) {
 
 Anagram.prototype.matches = function(wordArray) {
     var anagrams = [];
-    
+
     if (typeof wordArray === "string") {
         wordArray = [...arguments];
     };
